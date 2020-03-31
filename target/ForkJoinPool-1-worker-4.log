@@ -1,0 +1,23 @@
+11:34:13.898 karate.env system property was:  
+11:34:14.969 request:
+1 > GET http://127.0.0.1:5000/user/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: 127.0.0.1:5000
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_241)
+
+11:34:15.664 response time in milliseconds: 626.89
+1 < 200
+1 < Content-Length: 83
+1 < Content-Type: application/json
+1 < Date: Tue, 31 Mar 2020 06:04:15 GMT
+1 < Server: Werkzeug/0.16.1 Python/3.6.6
+{
+  "email": "ram@gmail.com", 
+  "id": 2, 
+  "name": "ram", 
+  "password": "sai"
+}
+
+
+ectException: Connect to 127.0.0.1:5000 [/127.0.0.1] failed: Connection refused: connect

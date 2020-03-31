@@ -1,0 +1,173 @@
+<testsuite failures="5" name="src/test/java/examples/users/users.feature" skipped="0" tests="5" time="6.592309">
+  <testcase classname="src.test.java.examples.users.users" name="Testing a POST endpoint with request body" time="2.529606">
+    <failure message="users.feature:10 - &#10;org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:5000 [/127.0.0.1] failed: Connection refused: connect">* url 'http://127.0.0.1:5000/' ............................................ passed
+Given path 'users' ........................................................ passed
+And request {name: harley, email: 'harley@gmail.com', password: 'henry'} .. passed
+When method POST .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:10 - 
+org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:5000 [/127.0.0.1] failed: Connection refused: connect&#13;
+	at ✽.When method POST (users.feature:10)&#13;
+
+Then status 200 ........................................................... skipped
+And match $ == 'User Created Successfully' ................................ skipped</failure>
+  </testcase>
+  <testcase classname="src.test.java.examples.users.users" name="Deleting the  user by id" time="1.015974">
+    <failure message="users.feature:16 - &#10;org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:5000 [/127.0.0.1] failed: Connection refused: connect">* url 'http://127.0.0.1:5000/' ............................................ passed
+Given path 'users' ........................................................ passed
+And request {name: harley, email: 'harley@gmail.com', password: 'henry'} .. passed
+When method POST .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:10 - 
+org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:5000 [/127.0.0.1] failed: Connection refused: connect&#13;
+	at ✽.When method POST (users.feature:10)&#13;
+
+Then status 200 ........................................................... skipped
+And match $ == 'User Created Successfully' ................................ skipped
+* url 'http://127.0.0.1:5000/' ............................................ passed
+Given path 'user', 16 ..................................................... passed
+When method delete ........................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:16 - 
+org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:5000 [/127.0.0.1] failed: Connection refused: connect&#13;
+	at ✽.When method delete (users.feature:16)&#13;
+
+Then status 200 ........................................................... skipped</failure>
+  </testcase>
+  <testcase classname="src.test.java.examples.users.users" name="get all users" time="1.007005">
+    <failure message="users.feature:21 - &#10;org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:5000 [/127.0.0.1] failed: Connection refused: connect">* url 'http://127.0.0.1:5000/' ............................................ passed
+Given path 'users' ........................................................ passed
+And request {name: harley, email: 'harley@gmail.com', password: 'henry'} .. passed
+When method POST .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:10 - 
+org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:5000 [/127.0.0.1] failed: Connection refused: connect&#13;
+	at ✽.When method POST (users.feature:10)&#13;
+
+Then status 200 ........................................................... skipped
+And match $ == 'User Created Successfully' ................................ skipped
+* url 'http://127.0.0.1:5000/' ............................................ passed
+Given path 'user', 16 ..................................................... passed
+When method delete ........................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:16 - 
+org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:5000 [/127.0.0.1] failed: Connection refused: connect&#13;
+	at ✽.When method delete (users.feature:16)&#13;
+
+Then status 200 ........................................................... skipped
+* url 'http://127.0.0.1:5000/' ............................................ passed
+Given path 'users' ........................................................ passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:21 - 
+org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:5000 [/127.0.0.1] failed: Connection refused: connect&#13;
+	at ✽.When method get (users.feature:21)&#13;
+
+Then status 200 ........................................................... skipped</failure>
+  </testcase>
+  <testcase classname="src.test.java.examples.users.users" name="getting user by id" time="1.030276">
+    <failure message="users.feature:26 - &#10;org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:5000 [/127.0.0.1] failed: Connection refused: connect">* url 'http://127.0.0.1:5000/' ............................................ passed
+Given path 'users' ........................................................ passed
+And request {name: harley, email: 'harley@gmail.com', password: 'henry'} .. passed
+When method POST .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:10 - 
+org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:5000 [/127.0.0.1] failed: Connection refused: connect&#13;
+	at ✽.When method POST (users.feature:10)&#13;
+
+Then status 200 ........................................................... skipped
+And match $ == 'User Created Successfully' ................................ skipped
+* url 'http://127.0.0.1:5000/' ............................................ passed
+Given path 'user', 16 ..................................................... passed
+When method delete ........................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:16 - 
+org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:5000 [/127.0.0.1] failed: Connection refused: connect&#13;
+	at ✽.When method delete (users.feature:16)&#13;
+
+Then status 200 ........................................................... skipped
+* url 'http://127.0.0.1:5000/' ............................................ passed
+Given path 'users' ........................................................ passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:21 - 
+org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:5000 [/127.0.0.1] failed: Connection refused: connect&#13;
+	at ✽.When method get (users.feature:21)&#13;
+
+Then status 200 ........................................................... skipped
+* url 'http://127.0.0.1:5000/' ............................................ passed
+Given path 'user', 2 ...................................................... passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:26 - 
+org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:5000 [/127.0.0.1] failed: Connection refused: connect&#13;
+	at ✽.When method get (users.feature:26)&#13;
+
+Then status 200 ........................................................... skipped</failure>
+  </testcase>
+  <testcase classname="src.test.java.examples.users.users" name="updating user by id" time="1.009448">
+    <failure message="users.feature:32 - &#10;org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:5000 [/127.0.0.1] failed: Connection refused: connect">* url 'http://127.0.0.1:5000/' ............................................ passed
+Given path 'users' ........................................................ passed
+And request {name: harley, email: 'harley@gmail.com', password: 'henry'} .. passed
+When method POST .......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:10 - 
+org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:5000 [/127.0.0.1] failed: Connection refused: connect&#13;
+	at ✽.When method POST (users.feature:10)&#13;
+
+Then status 200 ........................................................... skipped
+And match $ == 'User Created Successfully' ................................ skipped
+* url 'http://127.0.0.1:5000/' ............................................ passed
+Given path 'user', 16 ..................................................... passed
+When method delete ........................................................ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:16 - 
+org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:5000 [/127.0.0.1] failed: Connection refused: connect&#13;
+	at ✽.When method delete (users.feature:16)&#13;
+
+Then status 200 ........................................................... skipped
+* url 'http://127.0.0.1:5000/' ............................................ passed
+Given path 'users' ........................................................ passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:21 - 
+org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:5000 [/127.0.0.1] failed: Connection refused: connect&#13;
+	at ✽.When method get (users.feature:21)&#13;
+
+Then status 200 ........................................................... skipped
+* url 'http://127.0.0.1:5000/' ............................................ passed
+Given path 'user', 2 ...................................................... passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:26 - 
+org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:5000 [/127.0.0.1] failed: Connection refused: connect&#13;
+	at ✽.When method get (users.feature:26)&#13;
+
+Then status 200 ........................................................... skipped
+* url 'http://127.0.0.1:5000/' ............................................ passed
+Given path 'user', 13 ..................................................... passed
+And request {name: 'mary', email: 'mary@gmail.com', password: 'mary'} ..... passed
+When method put ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: users.feature:32 - 
+org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:5000 [/127.0.0.1] failed: Connection refused: connect&#13;
+	at ✽.When method put (users.feature:32)&#13;
+
+Then status 200 ........................................................... skipped</failure>
+  </testcase>
+</testsuite>
